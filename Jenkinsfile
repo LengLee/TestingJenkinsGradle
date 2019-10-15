@@ -1,9 +1,9 @@
 node() {
 	stage('Source'){
-		git url: 'https://github.com/LengLee/NewBangkok-web'
+		git url: 'https://github.com/LengLee/TestingJenkinsGradle'
 	}
 	stage('Compile'){
-		sh "gradle clean compileJava"
+		sh "./gradlew clean compileJava"
 	}
 }
 
