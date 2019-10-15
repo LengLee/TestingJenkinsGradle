@@ -3,6 +3,8 @@
  */
 package TestingJenkinsGradle;
 
+import org.joda.time.LocalTime;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -10,5 +12,7 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+	LocalTime currentTime = new LocalTime();
+        System.out.println("The current local time is: " + currentTime);
     }
 }
