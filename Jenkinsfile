@@ -4,6 +4,8 @@ node() {
 	}
 	stage('Compile'){
 		sh "./gradlew clean compileJava"
+	}
+	stage('Run'){
 		sh "./gradlew run "
 	}
 }
