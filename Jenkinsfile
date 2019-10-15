@@ -3,7 +3,7 @@ node() {
 		git url: 'https://github.com/LengLee/TestingJenkinsGradle'
 	}
 	stage('Compile'){
-		sh "./gradlew clean compileJava"
+		sh "gradle clean compileJava"
 	}
 }
 
