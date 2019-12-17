@@ -1,5 +1,5 @@
 node() {
-	ws('/var/jenkins_home/workspace/Gradle@2 '){
+	ws('/var/jenkins_home/workspace/Gradlepe@2 '){
 	stage('Source'){
 		git url: 'https://github.com/LengLee/TestingJenkinsGradle'
 	}
