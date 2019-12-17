@@ -1,5 +1,8 @@
 node() {
-
+	def workspace = pwd()
+	print 'workspace'
+	
+	sh ' echo ${WORKSPACE} '
 	stage('Source'){
 		git url: 'https://github.com/LengLee/TestingJenkinsGradle'
 	}
